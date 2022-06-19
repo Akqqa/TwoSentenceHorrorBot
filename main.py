@@ -13,6 +13,6 @@ async def scareme(ctx):
     title=randomPostTitle(reddit, "twosentencehorror")
     text = randomPostText(reddit, "twosentencehorror")
 
-    await ctx.respond(title + "\n" + text)
+    await ctx.respond("**" + title + "**" + "\n\n" + "||" + text + "||")
 
 bot.run(token)

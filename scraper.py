@@ -18,9 +18,7 @@ def setupScraper():
     return reddit
 
 def randomPostTitle(reddit, subredditName):
-    print("hi")
     post = reddit.subreddit(subredditName).random()
-    print("bye")
     return post.title
 
 def randomPostText(reddit, subredditName):
